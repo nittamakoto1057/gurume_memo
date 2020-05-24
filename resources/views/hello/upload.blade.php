@@ -35,6 +35,7 @@
         <td>{{$message}}</td></tr>
     @enderror
   </form>
+  <a href="/hello">トップへ戻る</a>
 @endsection
 
 @section('footer')

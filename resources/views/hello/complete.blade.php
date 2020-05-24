@@ -5,7 +5,7 @@
 
 @section('content')
   <p>{{$msg2}}</p>
-  <a href="http://127.0.0.1:8000/hello">トップへ戻る</a>
+  <a href="/hello">トップへ戻る</a>
   
 @endsection
 

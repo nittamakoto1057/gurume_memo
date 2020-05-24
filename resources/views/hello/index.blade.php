@@ -4,6 +4,7 @@
 
 
 @section('content')
+  <a href="/upload">アップする</a>
   <table>
   <tr><th>Title</th><th>Picture</th><th>Memo</th></tr>
   @foreach ($items as $item)
