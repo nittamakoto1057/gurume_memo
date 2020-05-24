@@ -8,12 +8,20 @@
         @csrf
         <table>
             <tr>
+                <td>画像</td>
+                <td><img src="{{ $data['read_image_path'] }}" width="400" height="400"></td>
+            </tr>
+            <tr>
                 <td>タイトル</td>
                 <td>{{ $data['title'] }}</td>
             </tr>
             <tr>
-                <td>画像</td>
-                <td><img src="{{ $data['read_image_path'] }}" width="400" height="400"></td>
+                <td>アクセス</td>
+                <td>{{ $data['address'] }}</td>
+            </tr>
+            <tr>
+                <td>使ったお金</td>
+                <td>約{{ $data['howmuch'] }}円</td>
             </tr>
             <tr>
                 <td>メモ</td>

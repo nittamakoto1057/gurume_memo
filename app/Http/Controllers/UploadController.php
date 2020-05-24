@@ -19,12 +19,16 @@ class UploadController extends Controller
         $read_image_path = str_replace('public/','storage/',$image_path);
 
         $title = $post_data['title'];
+        $address = $post_data['address'];
+        $howmuch = $post_data['howmuch'];
         $coment = $post_data['coment'];
 
         $data = array(
             'image_path' => $image_path,
             'read_image_path' => $read_image_path,
             'title' => $title,
+            'address' => $address,
+            'howmuch' => $howmuch,
             'coment' => $coment,
         );
         $request->session()->put('data', $data);
@@ -50,11 +54,15 @@ class UploadController extends Controller
         $read_path = str_replace('public/', 'storage/', $storage_path);
 
         $title = $data['title'];
+        $address = $data['address'];
+        $howmuch = $howmuch['howmuch'];
         $coment = $data['coment'];
             
         $photo = new Photo;
         $photo->photo_path = $read_path;
         $photo->title = $title;
+        $photo->address = $address;
+        $photo->howmuch = $howmuch;
         $photo->coment = $coment;
         $photo->save();
     
