@@ -23,7 +23,7 @@
         <td>{{$message}}</td></tr>
     @enderror<br>
 
-    アクセス：<input type="text" name='address' size='10' value="{{old('access')}}">
+    アクセス：<input type="text" name='address' size='30' value="{{old('access')}}">
     
     使ったお金　約：<input type="text" name='howmuch' size='15' value="{{old('howmuch')}}">円<br>
     
