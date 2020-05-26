@@ -55,7 +55,7 @@ class UploadController extends Controller
 
         $title = $data['title'];
         $address = $data['address'];
-        $howmuch = $howmuch['howmuch'];
+        $howmuch = $data['howmuch'];
         $coment = $data['coment'];
             
         $photo = new Photo;

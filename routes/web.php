@@ -17,10 +17,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('hello', 'PhotoController@index');
-Route::get('upload', 'UploadController@index');
-Route::post('confirm', 'UploadController@store');
-Route::post('complete', 'UploadController@complete');
+Route::get('/hello', 'PhotoController@index');
+Route::get('/upload', 'UploadController@index');
+Route::post('/confirm', 'UploadController@store');
+Route::post('/complete', 'UploadController@complete');
+Route::get('/edit', 'PhotoController@edit');
+Route::post('/edit', 'PhotoController@update');
+Route::get('/del', 'PhotoController@delete');
+Route::post('/del', 'PhotoController@remove');
+
 
 
 

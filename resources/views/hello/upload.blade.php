@@ -4,7 +4,7 @@
 
 
 @section('content')
-  <p>{{$msg1}}</p>
+  <h2>{{$msg1}}</h2>
   @if (count($errors) > 0)
     <p>入力に問題があります。</p>
   @endif
